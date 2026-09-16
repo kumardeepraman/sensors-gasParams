@@ -1,0 +1,117 @@
+{
+    "IntegratedReconstruction": "yes",
+    "Comment#1": "Calibration file imported only if IntegratedReconstruction=yes",
+    "Calibration": "drich-calibration.json",
+    "OutputRootFile": "drich-events.root",
+    "WriteOutputTree": "yes",
+
+    "UsePoissonTermInChiSquare": "no",
+    "UseTimingInChiSquare": "yes",
+    "DefaultSinglePhotonThetaResolution": 0.002,
+    "SensorActiveAreaPixellation": 8,
+    "UseMcTruthPhotonDirectionSeed": "no",
+    "MinHitCountCutoff": 5,
+    "IdentifiedParticles": ["pi+", "K+"], 
+    
+    "CombinedEvaluationPlots": "store",
+    "CombinedEvaluationPlotsGeometry": [1265,  10,  625, 800],
+	
+    "Acceptance": {
+	"comment": "Nominal values, used to calculate ACTS DiscSurfaceConfig parameters",
+	"eta-min":  1.5,
+	"eta-max":  3.5
+    },
+    
+    "Radiators": {
+	"Aerogel": {
+	    "imaging": "yes",
+	    "acts-planes": 5,
+	    
+	    "evaluation-plots": "store",
+	    "evaluation-plots-geometry": [-10,  10, 1250, 540],
+	    "refractive-index-range": [1.015, 1.025],
+	    "photon-vertex-range": [1970, 2030],
+	    "cherenkov-angle-range": [200, 250]
+	},
+	"Acrylic": {
+	    "imaging": "no",
+	    "acts-planes": 5
+	},
+	"GasVolume": {
+	    "imaging": "yes",
+	    "acts-planes": 10,
+	    
+	    "evaluation-plots": "store",
+	    "evaluation-plots-geometry": [-10, 600, 1250, 540],
+	    "refractive-index-range": [1.00050, 1.00100],
+	    "photon-vertex-range": [1900, 3200],
+	    "cherenkov-angle-range": [30, 50]
+	}
+    },
+    
+    "Photosensor": {
+	"quantum-efficiency": {
+	    "285*nm": 0.10,
+	    "295*nm": 0.23,
+	    "306*nm": 0.28,
+	    "316*nm": 0.31,
+	    "326*nm": 0.33,
+	    "337*nm": 0.35,
+	    "347*nm": 0.36,
+	    "358*nm": 0.36,
+	    "368*nm": 0.37,
+	    "378*nm": 0.39,
+	    "389*nm": 0.43,
+	    "399*nm": 0.45,
+	    "410*nm": 0.47,
+	    "420*nm": 0.48,
+	    "430*nm": 0.49,
+	    "441*nm": 0.50,
+	    "451*nm": 0.50,
+	    "462*nm": 0.50,
+	    "472*nm": 0.50,
+	    "483*nm": 0.50,
+	    "493*nm": 0.49,
+	    "503*nm": 0.48,
+	    "514*nm": 0.47,
+	    "524*nm": 0.46,
+	    "535*nm": 0.44,
+	    "545*nm": 0.42,
+	    "555*nm": 0.41,
+	    "566*nm": 0.39,
+	    "576*nm": 0.37,
+	    "587*nm": 0.36,
+	    "597*nm": 0.34,
+	    "607*nm": 0.33,
+	    "618*nm": 0.31,
+	    "628*nm": 0.29,
+	    "639*nm": 0.27,
+	    "649*nm": 0.26,
+	    "660*nm": 0.24,
+	    "670*nm": 0.23,
+	    "680*nm": 0.21,
+	    "691*nm": 0.20,
+	    "701*nm": 0.19,
+	    "712*nm": 0.18,
+	    "722*nm": 0.17,
+	    "732*nm": 0.16,
+	    "743*nm": 0.15,
+	    "753*nm": 0.14,
+	    "764*nm": 0.13,
+	    "774*nm": 0.12,
+	    "784*nm": 0.11,
+	    "795*nm": 0.10,
+	    "805*nm": 0.10,
+	    "816*nm": 0.09,
+	    "826*nm": 0.08,
+	    "836*nm": 0.08,
+	    "847*nm": 0.07,
+	    "857*nm": 0.06,
+	    "868*nm": 0.06,
+	    "878*nm": 0.05,
+	    "1000*nm": 0.00
+	}
+    }
+
+
+}
