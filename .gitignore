@@ -1,0 +1,11 @@
+# ROOT and temporary files
+*.log
+*.tmp
+*.bak
+
+# Generated output
+# out/
+
+# OS/editor files
+.DS_Store
+*~
